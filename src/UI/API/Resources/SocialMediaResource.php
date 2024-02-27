@@ -17,6 +17,7 @@ class SocialMediaResource extends JsonResource
         return [
             'name' => $this->name,
             'link' => $this->link,
+            'icon' => $this->getFirstMediaUrl(),
         ];
     }
 }

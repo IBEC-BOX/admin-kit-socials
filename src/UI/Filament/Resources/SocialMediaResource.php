@@ -2,12 +2,11 @@
 
 namespace AdminKit\SocialMedias\UI\Filament\Resources;
 
-use AdminKit\Core\Forms\Components\TranslatableTabs;
+use Filament\Forms;
+use Filament\Tables;
+use Filament\Resources\Resource;
 use AdminKit\SocialMedias\Models\SocialMedia;
 use AdminKit\SocialMedias\UI\Filament\Resources\SocialMediaResource\Pages;
-use Filament\Forms;
-use Filament\Resources\Resource;
-use Filament\Tables;
 
 class SocialMediaResource extends Resource
 {
@@ -19,6 +18,11 @@ class SocialMediaResource extends Resource
     {
         return $form
             ->schema([
+                Forms\Components\SpatieMediaLibraryFileUpload::make('icon')
+                    ->label('Иконка')
+                    ->image()
+                    ->columnSpan(2)
+                    ->required(),
                 Forms\Components\TextInput::make('name')
                     ->label(__('admin-kit-social-medias::social-medias.resource.name'))
                     ->placeholder('instagram')
