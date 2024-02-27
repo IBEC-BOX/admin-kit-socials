@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use VendorName\Skeleton\UI\API\Controllers\SingleNameController;
+use AdminKit\SocialMedias\UI\API\Controllers\SocialMediaController;
 
-Route::get('/skeleton_without_prefix', [SingleNameController::class, 'index']);
-Route::get('/skeleton_without_prefix/{id}', [SingleNameController::class, 'show']);
+Route::get('/social-medias', [SocialMediaController::class, 'index']);
+Route::get('/social-medias/{id}', [SocialMediaController::class, 'show']);
