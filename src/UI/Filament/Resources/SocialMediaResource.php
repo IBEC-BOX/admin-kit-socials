@@ -2,7 +2,6 @@
 
 namespace AdminKit\SocialMedias\UI\Filament\Resources;
 
-use AdminKit\Core\Forms\Components\TranslatableTabs;
 use AdminKit\SocialMedias\Models\SocialMedia;
 use AdminKit\SocialMedias\UI\Filament\Resources\SocialMediaResource\Pages;
 use Filament\Forms;
