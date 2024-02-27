@@ -2,10 +2,10 @@
 
 namespace AdminKit\SocialMedias;
 
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
 use AdminKit\SocialMedias\Commands\SocialMediasCommand;
 use AdminKit\SocialMedias\Providers\RouteServiceProvider;
+use Spatie\LaravelPackageTools\Package;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class SocialMediasServiceProvider extends PackageServiceProvider
 {

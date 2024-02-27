@@ -3,11 +3,11 @@
 namespace AdminKit\SocialMedias\UI\Filament\Resources;
 
 use AdminKit\Core\Forms\Components\TranslatableTabs;
+use AdminKit\SocialMedias\Models\SocialMedia;
+use AdminKit\SocialMedias\UI\Filament\Resources\SocialMediaResource\Pages;
 use Filament\Forms;
 use Filament\Resources\Resource;
 use Filament\Tables;
-use AdminKit\SocialMedias\Models\SocialMedia;
-use AdminKit\SocialMedias\UI\Filament\Resources\SocialMediaResource\Pages;
 
 class SocialMediaResource extends Resource
 {

@@ -2,10 +2,10 @@
 
 namespace AdminKit\SocialMedias\Tests;
 
+use AdminKit\SocialMedias\SocialMediasServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
-use AdminKit\SocialMedias\SocialMediasServiceProvider;
 
 class TestCase extends Orchestra
 {

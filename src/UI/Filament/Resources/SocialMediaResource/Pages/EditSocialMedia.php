@@ -2,9 +2,9 @@
 
 namespace AdminKit\SocialMedias\UI\Filament\Resources\SocialMediaResource\Pages;
 
+use AdminKit\SocialMedias\UI\Filament\Resources\SocialMediaResource;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
-use AdminKit\SocialMedias\UI\Filament\Resources\SocialMediaResource;
 
 class EditSocialMedia extends EditRecord
 {

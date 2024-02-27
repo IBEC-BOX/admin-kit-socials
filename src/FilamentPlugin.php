@@ -2,9 +2,9 @@
 
 namespace AdminKit\SocialMedias;
 
+use AdminKit\SocialMedias\UI\Filament\Resources\SocialMediaResource;
 use Filament\Contracts\Plugin;
 use Filament\Panel;
-use AdminKit\SocialMedias\UI\Filament\Resources\SocialMediaResource;
 
 class FilamentPlugin implements Plugin
 {
