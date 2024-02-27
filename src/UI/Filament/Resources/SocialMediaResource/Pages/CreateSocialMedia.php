@@ -2,8 +2,8 @@
 
 namespace AdminKit\SocialMedias\UI\Filament\Resources\SocialMediaResource\Pages;
 
-use Filament\Resources\Pages\CreateRecord;
 use AdminKit\SocialMedias\UI\Filament\Resources\SocialMediaResource;
+use Filament\Resources\Pages\CreateRecord;
 
 class CreateSocialMedia extends CreateRecord
 {

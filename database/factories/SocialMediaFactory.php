@@ -2,8 +2,8 @@
 
 namespace AdminKit\SocialMedias\Database\Factories;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use AdminKit\SocialMedias\Models\SocialMedia;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
 class SocialMediaFactory extends Factory
 {

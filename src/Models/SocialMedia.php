@@ -3,9 +3,9 @@
 namespace AdminKit\SocialMedias\Models;
 
 use AdminKit\Core\Abstracts\Models\AbstractModel;
+use AdminKit\SocialMedias\Database\Factories\SocialMediaFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Spatie\Translatable\HasTranslations;
-use AdminKit\SocialMedias\Database\Factories\SocialMediaFactory;
 
 class SocialMedia extends AbstractModel
 {
