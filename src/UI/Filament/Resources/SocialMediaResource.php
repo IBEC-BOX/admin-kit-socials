@@ -2,11 +2,11 @@
 
 namespace AdminKit\SocialMedias\UI\Filament\Resources;
 
-use Filament\Forms;
-use Filament\Tables;
-use Filament\Resources\Resource;
 use AdminKit\SocialMedias\Models\SocialMedia;
 use AdminKit\SocialMedias\UI\Filament\Resources\SocialMediaResource\Pages;
+use Filament\Forms;
+use Filament\Resources\Resource;
+use Filament\Tables;
 
 class SocialMediaResource extends Resource
 {

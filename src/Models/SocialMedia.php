@@ -2,11 +2,11 @@
 
 namespace AdminKit\SocialMedias\Models;
 
-use Spatie\MediaLibrary\HasMedia;
-use Spatie\MediaLibrary\InteractsWithMedia;
 use AdminKit\Core\Abstracts\Models\AbstractModel;
 use AdminKit\SocialMedias\Database\Factories\SocialMediaFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
 
 class SocialMedia extends AbstractModel implements HasMedia
 {
