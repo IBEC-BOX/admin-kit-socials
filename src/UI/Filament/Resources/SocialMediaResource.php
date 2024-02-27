@@ -19,28 +19,29 @@ class SocialMediaResource extends Resource
     {
         return $form
             ->schema([
-                TranslatableTabs::make(fn ($locale) => Forms\Components\Tabs\Tab::make($locale)->schema([
-                    Forms\Components\TextInput::make('title')
-                        ->label(__('admin-kit-social-medias::social-medias.resource.title'))
-                        ->required($locale === app()->getLocale()),
-                ])),
-            ])
-            ->columns(1);
+                Forms\Components\TextInput::make('name')
+                    ->label(__('admin-kit-social-medias::social-medias.resource.name'))
+                    ->placeholder('instagram')
+                    ->required(),
+                Forms\Components\TextInput::make('link')
+                    ->url()
+                    ->label(__('admin-kit-social-medias::social-medias.resource.link'))
+                    ->placeholder('https://www.instagram.com/{profile}')
+                    ->required(),
+            ]);
     }
 
     public static function table(Tables\Table $table): Tables\Table
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('id')
-                    ->label(__('admin-kit-social-medias::social-medias.resource.id'))
-                    ->sortable(),
-                Tables\Columns\TextColumn::make('title')
-                    ->label(__('admin-kit-social-medias::social-medias.resource.title')),
+                Tables\Columns\TextColumn::make('name')
+                    ->label(__('admin-kit-social-medias::social-medias.resource.name')),
+                Tables\Columns\TextColumn::make('link')
+                    ->label(__('admin-kit-social-medias::social-medias.resource.link')),
                 Tables\Columns\TextColumn::make('created_at')
                     ->label(__('admin-kit-social-medias::social-medias.resource.created_at')),
             ])
-            ->defaultSort('id', 'desc')
             ->filters([
                 //
             ])
@@ -51,7 +52,8 @@ class SocialMediaResource extends Resource
             ->bulkActions([
                 Tables\Actions\DeleteBulkAction::make(),
             ])
-            ->defaultSort('id', 'desc');
+            ->reorderable('sort')
+            ->defaultSort('sort');
     }
 
     public static function getRelations(): array
@@ -76,11 +78,6 @@ class SocialMediaResource extends Resource
     }
 
     public static function getPluralLabel(): ?string
-    {
-        return __('admin-kit-social-medias::social-medias.resource.plural_label');
-    }
-
-    public static function getNavigationGroup(): ?string
     {
         return __('admin-kit-social-medias::social-medias.resource.plural_label');
     }

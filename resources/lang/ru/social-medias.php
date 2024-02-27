@@ -2,11 +2,12 @@
 
 return [
     'resource' => [
-        'label' => 'SocialMedia',
-        'plural_label' => 'SocialMedias',
+        'label' => 'Социальные сети',
+        'plural_label' => 'Социальные сети',
 
         'id' => 'ID',
-        'title' => 'Title',
+        'name' => 'Название',
+        'link' => 'Ссылка',
 
         'created_at' => 'Создан',
         'updated_at' => 'Обновлен',

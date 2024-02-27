@@ -2,11 +2,12 @@
 
 return [
     'resource' => [
-        'label' => 'SocialMedia',
-        'plural_label' => 'SocialMedias',
+        'label' => 'Social Media',
+        'plural_label' => 'Social Medias',
 
         'id' => 'ID',
-        'title' => 'Title',
+        'name' => 'Name',
+        'link' => 'Link',
 
         'created_at' => 'Created At',
         'updated_at' => 'Updated At',
